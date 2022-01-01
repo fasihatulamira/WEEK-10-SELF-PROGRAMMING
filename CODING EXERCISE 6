@@ -1,0 +1,22 @@
+package selfprogArray;
+
+import java.util.Scanner;
+
+public class smallestIndex {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	    double[] list= {1,5,3,4,5,5};
+		
+		double max= list[0];
+		int index=0;
+		
+		for (int i=1; i<list.length; i++) {//i=0 change to i=1
+		 if (list[i]> max) {
+			 max=list[i];
+			 index=i;
+			 System.out.println("the smallest index: " + index);
+		 }
+		
+	}
+	}
+}
